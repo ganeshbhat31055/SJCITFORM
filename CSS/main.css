@@ -1,0 +1,325 @@
+/*
+Copyright GANESH P BHAT
+*/
+/*
+fully documented code is available, anybody can download or fork me on Github.com at ganesh31055
+Happy Coding
+*/
+
+/* Code for adding the font styles for MAD RATS and COMIC SANS into CSS and HTML files*/
+
+@font-face{
+    font-family: 'Mad Rats';
+    font-style: normal;
+    font-weight: normal;
+    src:local('Mad Rats'),url('../Mad Rats.ttf') format('truetype');
+}
+
+
+@font-face{
+    font-family: 'Comic Sans';
+    font-style: normal;
+    font-weight: normal;
+    src:local('Comic Sans'),url('../Comic_Sans.ttf') format('truetype');
+}
+
+/* Styling the input labels */
+.txt {
+    font-family: 'Comic Sans';
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 200;
+    text-align: center;
+    margin-left: 5px;
+    color: white;
+}
+
+#txt{
+    font-family: 'Comic Sans';
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 200;
+    text-align:left;
+    margin-left: 5px;
+    color: white;
+}
+
+#txt1{
+    font-family: 'Comic Sans';
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 100;
+    text-align:center;
+    margin-left: 5px;
+    color: white;
+}
+
+#txt2{
+    font-family: 'Comic Sans';
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 200;
+    text-align:center;
+    margin-left: 5px;
+    color: white;
+}
+/*========================================*/
+
+/* Styling the html document */
+
+html{
+    background: linear-gradient(black,red);
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*making the body display items to flexbox layout */
+
+body{
+ display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+/* Styling the header or the TECHNOTSAV typo */
+
+.header{
+    font-family: 'Comic Sans';
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    height: auto;
+}
+
+
+
+#technotsav{
+    color: yellow;
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    color:yellow;
+    flex-basis: auto;
+}
+
+/*=============================================*/
+
+/* Styling the form for desktop display*/
+
+#content{
+    width: 100%;
+    flex: 1;
+}
+
+#form{
+    width: 25%;
+    margin: 0 auto;
+    flex:1;
+}
+
+#events{
+    font-family: 'Comic Sans';
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.txt5{
+    font-family: 'Comic Sans';
+    font-size: .7em;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: #CFFFFC;
+    height: auto;
+    flex: 1;
+
+}
+
+
+/*==============================================*/
+
+/* Styling the form labels */
+
+#inp{
+    width: 80%;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 0 auto;
+}
+
+#Abutton{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#correct{
+    margin: 0 auto;
+    width: 100px;
+    height : 100px;
+}
+
+/*==============================================*/
+
+#msgSub{
+    margin-top: 10px;
+}
+
+#error{
+    font-family: 'Comic Sans';
+    font-size: 1em;
+    font-weight: 200;
+    color: white;
+}
+
+/* Styling the SUBMIT button for display */
+#Submit{
+    margin: 25px;
+    display: block;
+    font-family: 'Comic Sans';
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 200;
+    border-radius: 5px;
+    alignment: left;
+}
+
+/*======================================*/
+
+/* Styling he copyrights for TECHNOTSAV */
+#copy{
+    font-family: 'Comic Sans';
+    font-size: .7em;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+#copy1{
+    font-family: 'Comic Sans';
+    font-size: .7em;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+/*=====================================*/
+
+/* Animations for the SVG TECHNOTSAV elements */
+
+@keyframes shadow{
+
+    100% {
+        fill-opacity:1;
+    }
+}
+
+@keyframes tshape{
+
+   100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-tshape{
+
+    100%{
+        fill-opacity:1;
+        stroke:#000000;
+    }
+}
+
+
+@keyframes go-down{
+    0%{
+        -webkit-transform: rotate(7deg) ;
+        -moz-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        -o-transform: rotate(7deg);
+        transform: rotate(7deg) scale(-1,-1);
+    }
+
+    100%{
+        transform:rotate(1080deg) scale(0,0);
+        visibility: collapse;
+    }
+}
+
+
+
+#svg2{
+    margin: 0 auto;
+    flex: 1;
+}
+
+.path{
+    transform-origin: 50% 25%;
+       animation: go-down .8s 4.8s linear forwards;
+}
+
+#path3{
+    animation: shadow .5s 4.1s linear forwards;
+}
+
+#path4{
+    stroke-width:4;
+    stroke:#ffffff;
+    stroke-dasharray:1772;
+    stroke-dashoffset:1772;
+    animation: tshape 3s 1s linear forwards,fill-tshape .5s 4.1s linear forwards ;
+}
+
+/*=============================================*/
+
+table{
+  width: 100%;
+  border-color: white;
+}
+
+th, tr {
+  font-family: 'Comic Sans';
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 200;
+  margin-left: 5px;
+  color: black;
+  text-align: center;
+}
+
+/* Media queries for mobile devices */
+@media screen and (max-width:600px){
+    #form{
+        width:80%;
+    }
+    .txt{
+        font-size: 1.3em;;
+    }
+    #txt{
+        font-size: 1.3em;
+    }
+    #inp{
+        font-size:1.3em;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #svg2{
+    width:100%;
+}
+    #correct{
+        margin: 0 auto;
+        width: 70px;
+        height : 70px;
+    }
+
+}
+/*===================================*/
